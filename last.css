@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@font-face {
+    /*font from https://codepen.io/Nimoi/pen/keaFn*/
+    font-family: 'Monoton';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monoton'), local('Monoton-Regular'),
+        url(https://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+:root {
+    --bg-shape-color: linear-gradient(120deg, #343A4F, #0F1620);
+    --lightblue: #3D9DEA;
+    --darkblue: #4A4EEE;
+    --text-color: #D5E1EF;
+}
+
+*,
+button {
+    /* outline: 1px solid #f00 !important; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    /* overflow: hidden;
+    overflow-x: hidden; */
+    /* margin-top: 10px; */
+
+}
+
+/* main {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+.surprise {
+    background: radial-gradient(#cf15fe, #f80ce4);
+}
+
+.scroll-down {
+    color: whitesmoke;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em; /* Adjust size as needed */
+  }
+  
+
+
+h1 {
+    position: absolute;
+    margin-top: 30vh;
+    width: 100%;
+    text-align: center;
+    font-size: 333%;
+    font-family: sans-serif;
+    color: rgb(62, 233, 105);
+    /* opacity: 0.5; */
+}
+
+canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+
+.ballon {
+    background: radial-gradient(#fec215, #f8a90c);
+}
+
+/* profile card section
+================================================ */
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    /* flex-direction: column; */
+    margin-bottom: 10px;
+    background-image: linear-gradient(90deg, #414850, #131720);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 40px;
+    color: white;
+    background-image: var(--bg-shape-color);
+    overflow: hidden;
+}
+
+.overviewInfo {
+    padding: 10px;
+    background-image: linear-gradient(176deg, var(--lightblue), var(--darkblue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overviewInfo .semiimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50vw; */
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.overviewInfo .semiimg img {
+    width: 100%;
+    height: auto;
+    /* width: 50vw; */
+    border-radius: 200px;
+}
+
+/* profile description section */
+
+.profileSpecifications {
+    padding: 24px;
+}
+
+#profile {
+    margin-top: -35px;
+    text-align: center;
+}
+
+#profile_name {
+    position: unset;
+    text-align: left;
+    font-family: "Michroma", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: unset;
+}
+
+.profileSpecifications h3 {
+
+    position: relative;
+    height: -10px;
+}
+
+.profileSpecifications p {
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 1.5;
+    /* color: white; */
+}
+
+.profileSpecifications .red {
+    color: red;
+}
+
+.profileSpecifications .green {
+    color: rgb(25, 236, 78);
+}
+
+.profileSpecifications .productFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    grid-row-gap: 16px;
+}
+
+.profileSpecifications .productFeatures .feature {
+    display: flex;
+}
+
+/* checkout button*/
+.checkoutButton {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.preorder {
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(85deg, #61c7ef, #4833fb);
+    color: white;
+}
+
+.preorder p {
+    padding: 8px 17px;
+    border: 1px solid lime;
+}
